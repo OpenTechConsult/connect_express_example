@@ -29,3 +29,13 @@ We download and install Connect from the npm registry by using the following com
 
 > `npm install connect@3.4.0`
 
+We then then add a minimal "Hello World" Connect application to try it out.
+
+```js
+const app = require('connect')();
+app.use((req, res, next) => {
+   res.end('Hello World!');
+});
+app.listen(3000);
+```
+
