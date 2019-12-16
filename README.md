@@ -39,3 +39,14 @@ app.use((req, res, next) => {
 app.listen(3000);
 ```
 
+### Understanding how Connect middleware works
+
+In Connect, a ***middleware component*** is a **JavaScript function** that by convention accepts three (3) arguments: a **request object**, a **response object**, and an argument commonly named ***next**.   
+Next is a _callback function_ indicating that the component is done and the subsequent middleware component can be executed.
+
+Before the middleware runs, Connect uses a **dispatcher** that takes in requests and hands them off to the first middleware component added to the application.
+
+![Life cycle of two HTTP requests making their way through the Connect server](/assets/requests_lifecycle.png "Connect HTTP request life cycle")
+
+The design of the middleware API means that more-complex behavior can be composed of smaller building blocks. In the next section we will see how to do this by combining components.
+
