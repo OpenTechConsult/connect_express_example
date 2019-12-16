@@ -25,3 +25,7 @@ We will see how its middleware can be used to build simple web applications and 
 ### Setting up a Connect application
 
 **Express** is build on top of **Connect**. But we can use Connect alone to build a fully functionally web app.
+We download and install Connect from the npm registry by using the following command :
+
+> `npm install connect@3.4.0`
+
