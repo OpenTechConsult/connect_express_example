@@ -50,5 +50,3 @@ Before the middleware runs, Connect uses a **dispatcher** that takes in requests
 
 The design of the middleware API means that more-complex behavior can be composed of smaller building blocks. In the next section we will see how to do this by combining components.
 
-### Combining middleware
-
