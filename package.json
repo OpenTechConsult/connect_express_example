@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/OpenTechConsult/connect_express_example#readme",
   "dependencies": {
-    "connect": "^3.4.0"
+    "connect": "^3.7.0"
   }
 }
